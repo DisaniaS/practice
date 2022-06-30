@@ -116,7 +116,7 @@ body{
 }
 
 .about-text{
-    margin-top: 15px;
+    margin-top: 30px;
     font-size: 20px;
 }
 
@@ -124,22 +124,22 @@ body{
     color: red;
 }
 
-el{
+ol{
     font-size: 18px;
     margin-left: 50px;
     font-weight: 500;
-    margin-top: 14px;
+    margin-top: 30px;
 }
 
 li{
-    margin-top: 14px;
+    margin-top: 30px;
     font-weight: 500;
     margin-left: 15px;
 }
 
 .about-images{
     display: flex;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .img1{
