@@ -30,9 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
-}
+
 blockquote, q {
     quotes: none;
 }
@@ -46,6 +44,9 @@ table {
     border-spacing: 0;
 }
 
+a{
+    text-decoration: none;
+}
 /*css reset end*/
 
 
@@ -82,14 +83,14 @@ body{
 
 .logo{
     display:flex;
-    height: 120px;
-    width: 128px;
+    height: 100px;
+    width: 127px;
     background-image: url("./audi.png");
     align-items: center;
 }
 
 .car-background{
-    height: 80vh;
+    height: 85vh;
     background-position: 20px;
     background-size: cover;
     background-image: url("audi.jpg");
@@ -103,3 +104,48 @@ body{
     font-size: 36px;
     text-decoration: underline;
 }
+
+#about{
+    height: 100vh;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.about-text{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.bigger{
+    color: red;
+}
+
+el{
+    font-size: 18px;
+    margin-left: 50px;
+    font-weight: 500;
+    margin-top: 14px;
+}
+
+li{
+    margin-top: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.about-images{
+    display: flex;
+    margin-top: 150px;
+}
+
+.img1{
+    width: 900px;
+}
+
+.img2{
+    width: 900px;
+} 
