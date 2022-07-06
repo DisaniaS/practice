@@ -87,6 +87,7 @@ body{
     width: 127px;
     background-image: url("./audi.png");
     align-items: center;
+    background-repeat: no-repeat;
 }
 
 .car-background{
@@ -122,6 +123,8 @@ body{
 
 .bigger{
     color: red;
+    font-size: 20px;
+	font-weight: bolder;
 }
 
 ol{
@@ -149,3 +152,53 @@ li{
 .img2{
     width: 900px;
 } 
+
+.nav-open{
+    display: none;
+}
+
+.burger-nav-menu{
+    display: none;
+    margin-top: 15vh;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: bisque;    
+}
+
+.opened{
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .nav-item{
+        display: none;
+    }
+
+    .nav-open{
+        display: flex;
+    }
+
+    .nav-menu{
+        justify-content: end;
+    }
+
+    .car-bg-text{
+        font-size: 24px;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .logo{
+        height: 100px;
+        width: 140px;
+    }
+}
