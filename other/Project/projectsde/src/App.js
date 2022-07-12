@@ -1,13 +1,20 @@
-import logo from './logo.png';
+import logo from './components/logo.png';
 import './App.css';
+import MenuAppBar from './components/MenuAppBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+   <div className="App">
+     <MenuAppBar/>
+     <header className="App-header">
+       <div className="App-logo">
+         <div></div>
+         <div></div>
+         <img src={logo} className="logo" alt="logo" srcset=""/>
+       </div>
+     </header>
+   </div> 
+
   );
 }
 
