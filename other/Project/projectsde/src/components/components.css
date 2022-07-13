@@ -3,3 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.Home-Page {
+  background-image: url('./background.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.Tablica {
+  display:flex;
+  height: 100vh;
+}
+
+:link {
+  text-decoration: none;
+  color: white;
+}

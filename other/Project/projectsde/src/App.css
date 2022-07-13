@@ -1,8 +1,11 @@
-.App-header {
+
+
+.Body-Home {
   background-image: url('./components/background.jpg');
   background-repeat: no-repeat;
   height: 100vh;
 }
+
 
 .App-logo {
   display:flex;
@@ -13,6 +16,6 @@
 
 .logo {
   max-width: 100px;
-  margin-top: 10vh;
+  margin-top: 6vh;
   margin-right: 3vw;
 }

@@ -1,17 +1,9 @@
 import * as React from 'react';
+import {Link} from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import PropTypes from 'prop-types';
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -55,10 +47,10 @@ function MenuAppBar(props) {
       <AppBar className='AppBar' position="fixed">
         <Container className='Container' fixed >
           <Toolbar className='Toolbar'>
-            <Button color="inherit">Главная</Button>
-            <Button color="inherit">Цены</Button>
-            <Button color="inherit">Контакты</Button>
-            <Button color="inherit">Аккаунт</Button>
+            <Button color="inherit"><Link to="/">Главная</Link></Button>
+            <Button color="inherit"><Link to="/price">Цены</Link></Button>
+            <Button color="inherit"><Link to="/contacts">Контакты</Link></Button>
+            <Button color="inherit"><Link to="/account">Аккаунт</Link></Button>
           </Toolbar>
         </Container>
       </AppBar>
