@@ -1,21 +1,125 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans+Condensed:wght@300 & family= Noto+Sans+JP:wght@300 & display=swap');
+
+.logo{
+  width: 100px;
+}
+
 .Toolbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.Home-Page {
+.Welcome {
   background-image: url('./background.jpg');
   height: 100vh;
   background-repeat: no-repeat;
 }
 
-.Tablica {
-  display:flex;
-  height: 100vh;
-}
 
 :link {
   text-decoration: none;
+}
+
+.L {
   color: white;
+}
+
+.contacts-title{
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 65px;
+  text-align: center;
+  font-family: fantasy;
+}
+
+ol{
+  font-size: 28px;
+  margin-left: 50px;
+  font-weight: 500;
+  margin-top: 30px;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+li{
+  margin-left: 70px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.Home-Menu {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.Price-Content {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Oglavlenie{
+ font-size: 36px;
+ font-weight: 600;
+ text-align:  center;
+ font-family: fantasy;
+ line-height: 2;
+}
+.Zagolovok1{
+  text-align:  left;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: fantasy;
+  line-height: 4;
+ }
+
+ .Zagolovok2 {
+  text-align:  left;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: fantasy;
+  line-height: 4;
+ }
+
+ .txt1 {
+  text-align:  left;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  margin-left:80px;
+  line-height: 1.5;
+  
+ }
+
+ .SpisokGYM {
+  text-align: left;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 1.5;
+ }
+ .Tablica {
+  padding-top: 40px;
+  
+ }
+#about{
+  height: 100vh;
+}
+
+#gallery{
+  height: 100vh;
+}
+
+#team{
+  height: 100vh;
+}
+
+a {
+  color: black;
 }

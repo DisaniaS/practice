@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import { styled } from '@mui/material/styles';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
@@ -10,6 +11,15 @@ import Paper from '@mui/material/Paper';
 function createData(type, time, price) {
   return {type, time, price};
 }
+
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.head}`]: {
+    fontSize: 22,
+  },
+  [`&.${tableCellClasses.body}`]: {
+    fontSize: 18,
+  },
+}));
 
 const rows = [
   createData('Дневной (6:00-16:00)', '1 месяц', 2000),
@@ -23,12 +33,12 @@ const rows = [
 export default function PriceTable() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+      <Table sx={{ minWidth: 650 }} size="small" aria-label="customized table">
         <TableHead>
           <TableRow>
-            <TableCell>Вид абонемента</TableCell>
-            <TableCell align="right">Срок</TableCell>
-            <TableCell align="right">Цена</TableCell>
+            <StyledTableCell>Вид абонемента</StyledTableCell>
+            <StyledTableCell align="center">Срок</StyledTableCell>
+            <StyledTableCell align="right">Цена</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -37,11 +47,11 @@ export default function PriceTable() {
               key={row.type}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <StyledTableCell component="th" scope="row">
                 {row.type}
-              </TableCell>
-              <TableCell align="right">{row.time}</TableCell>
-              <TableCell align="right">{row.price}</TableCell>
+              </StyledTableCell>
+              <StyledTableCell align="center">{row.time}</StyledTableCell>
+              <StyledTableCell align="right">{row.price}</StyledTableCell>
             </TableRow>
           ))}
         </TableBody>
