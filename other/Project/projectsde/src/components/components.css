@@ -4,6 +4,7 @@
   width: 100px;
 }
 
+
 .Toolbar {
   display: flex;
   flex-direction: row;
@@ -26,6 +27,7 @@
 }
 
 .contacts-title{
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 36px;
   font-weight: 600;
   margin-top: 65px;
@@ -34,7 +36,7 @@
 }
 
 ol{
-  font-size: 28px;
+  font-size: 22px;
   margin-left: 50px;
   font-weight: 500;
   margin-top: 30px;
@@ -79,45 +81,167 @@ li{
   line-height: 4;
  }
 
- .Zagolovok2 {
+.Zagolovok2 {
   text-align:  left;
   font-size: 28px;
   font-weight: 600;
   font-family: fantasy;
   line-height: 4;
- }
+}
 
- .txt1 {
+.txt1 {
   text-align:  left;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 100;
   font-size: 28px;
   margin-left:80px;
   line-height: 1.5;
-  
- }
+ 
+}
 
- .SpisokGYM {
+.SpisokGYM {
   text-align: left;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 100;
   font-size: 28px;
   line-height: 1.5;
- }
- .Tablica {
+}
+.Tablica {
   padding-top: 40px;
   
- }
+}
+
+.Welcome{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Welcome-title{
+  color: white;
+  font-family: fantasy;
+  font-size: 72px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Welcome-buttion{
+  background-image: url('./Buttion-Background.png');
+}
+
+.Big-Buttion-Buy{
+  color: rgb(231, 220, 220);
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 #about{
   height: 100vh;
+  background-image: url('./background1.jpg');
+  background-repeat: no-repeat;
+}
+
+.about-title{
+  text-align: center;
+  font-size: 42px;
+  font-family: fantasy;
+  font-weight: 600;
+  line-height: 5;
+}
+
+.about-text{
+  font-size: 28px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  line-height: 2;
+
 }
 
 #gallery{
-  height: 100vh;
+  height: 110vh;
+  background-image: url('./background2.jpg');
+  background-repeat: no-repeat;
+
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 42px;
+  font-family: fantasy;
+  font-weight: 600;
+  line-height: 4;
+}
+
+.images{
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.Photo{
+  width: 400px;
+}
+
+.Gachi{
+  margin-left: 100;
 }
 
 #team{
-  height: 100vh;
+  height: 200vh;
+  background-image: url('./background3.jpg');
+  background-repeat: no-repeat;
+}
+
+.team-raskaz{
+  font-size: 28px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 1.2;
+}
+
+.team-we{
+  font-size: 28px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.team-personal{
+  font-size: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.O-nas-vseh{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.O-nas{
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  align-items: center;
 }
 
 a {

@@ -1,6 +1,8 @@
 import React from 'react'
 import './components.css'
 import logo from './logo.png'
+import MapYa from './MapYa'
+
 
 const Contacts = () => {
   return (
@@ -27,6 +29,10 @@ const Contacts = () => {
         <li><a target="_blank" rel="noreferrer" href="https://vk.com/id188067838">Чуреев Дмитрий</a></li>
         <li><a target="_blank" rel="noreferrer" href="https://vk.com/old_pieerdun">Забелло Егор</a></li>
       </ol>
+      <div>
+        <MapYa/>
+
+      </div>
     </div>
   )
 }

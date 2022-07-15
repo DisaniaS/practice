@@ -16,7 +16,7 @@ function MenuAppBar() {
             <Button color="inherit"><Link to="/" className='L'>Главная</Link></Button>
             <Button color="inherit"><Link to="/price" className='L'>Цены</Link></Button>
             <Button color="inherit"><Link to="/contacts" className='L'>Контакты</Link></Button>
-            <Button color="inherit"><Link to="/account"  className='L'>Купить</Link></Button>
+            <Button color="inherit"><Link to="/Buy"  className='L'>Купить</Link></Button>
           </Toolbar>
         </Container>
       </AppBar>

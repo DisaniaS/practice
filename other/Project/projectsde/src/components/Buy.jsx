@@ -1,8 +1,11 @@
 import React from 'react'
+import FirstCard from './cards/FirstCard'
 
 const Buy = () => {
   return (
-    <div>Buy</div>
+    <div className='content'>
+      <FirstCard/>
+    </div>
   )
 }
 
