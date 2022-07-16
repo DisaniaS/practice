@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import clubCard from './ClubCard.jpg';
 
-function FirstCard() {
+function SixthCard() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -18,11 +18,11 @@ function FirstCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Дневной абонемент на 1 месяц
+            Полный абонемент на 3 месяца
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Время посещения: 06:00-16:00<br/>
-            Стоимость: 2000
+            Время посещения: 06:00-00:00<br/>
+            Стоимость: 10000
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -35,4 +35,4 @@ function FirstCard() {
   );
 }
 
-export default FirstCard
+export default SixthCard

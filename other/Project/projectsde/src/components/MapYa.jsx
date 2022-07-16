@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { YMaps, Map, Clusterer, Placemark } from "react-yandex-maps";
 
+import POINTS from "./Points";
 
 const mapState = {
-  center: [55.751574, 37.573856],
-  zoom: 5
+  center: [55.834252, 38.019644],
+  zoom: 10
 };
 
 class MapYa extends React.Component {
@@ -22,14 +23,27 @@ class MapYa extends React.Component {
     return (
       <div>
         <YMaps>
-          <Map defaultState={mapState}>
-
+          <Map defaultState={mapState} width='600px' height='500px'>
+          <Clusterer
+              options={{
+                preset: "islands#invertedVioletClusterIcons",
+                groupByCoordinates: false
+              }}
+            >
+              {POINTS.map((point, index) => (
+                <Placemark
+                  key={index}
+                  geometry={point.coords}
+                  onClick={this.onPlacemarkClick(point)}
+                />
+              ))}
+            </Clusterer>
           </Map>
         </YMaps>
         {selectedPoint && (
           <div>
-            <h1>Selected point: {selectedPoint.title}</h1>
-            <p>{selectedPoint.descr}</p>
+            <h1>{selectedPoint.title}</h1>
+            <p>Адресс: {selectedPoint.descr}</p>
           </div>
         )}
       </div>

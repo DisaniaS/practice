@@ -5,6 +5,7 @@ import PriceList from './components/PriceList';
 import Home from './components/Home';
 import Contacts from './components/Contacts';
 import Buy from './components/Buy';
+import FooterMenu from './components/FooterMenu'
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
           <Route path='/contacts' element={<Contacts/>}/>
           <Route path='/buy' element={<Buy/>}/>
       </Routes>
+      <FooterMenu/>
      </div> 
+
 
    
 

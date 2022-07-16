@@ -26,13 +26,52 @@
   color: white;
 }
 
+.contacts-content {
+  background-image: url('./background3.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .contacts-title{
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 36px;
   font-weight: 600;
-  margin-top: 65px;
   text-align: center;
   font-family: fantasy;
+  line-height: 2;
+}
+
+.Text-and-Map {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Yandex-Map{
+  margin-right: 60px;
+}
+
+
+
+.Buy-Content {
+  background-image: url('./background3.jpg');
+  background-repeat: no-repeat;
+}
+
+.Buy-List {
+  height: 90vh;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.Cards{
+  flex-direction: column;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
 }
 
 ol{
@@ -61,8 +100,13 @@ li{
   margin-right: 150px;
 }
 
+.Price-List{
+  background-image: url('./background3.jpg');
+  background-repeat: no-repeat;
+}
+
 .Price-Content {
-  margin-top: 50px;
+  
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -107,7 +151,10 @@ li{
   line-height: 1.5;
 }
 .Tablica {
-  padding-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
   
 }
 
@@ -193,9 +240,17 @@ li{
 }
 
 #team{
-  height: 200vh;
+  height: 197vh;
   background-image: url('./background3.jpg');
   background-repeat: no-repeat;
+}
+
+.team-title{
+  text-align: center;
+  font-size: 42px;
+  font-family: fantasy;
+  font-weight: 600;
+  line-height: 5;
 }
 
 .team-raskaz{
@@ -222,6 +277,7 @@ li{
   font-weight: 300;
   margin-left: 30px;
   margin-top: 30px;
+  line-height: 4;
 }
 
 .O-nas-vseh{
@@ -229,6 +285,7 @@ li{
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  line-height: 1.5;
   
 }
 
@@ -242,8 +299,21 @@ li{
   font-size: 20px;
   font-family: 'Noto Sans JP', sans-serif;
   align-items: center;
+  line-height: 1.5;
 }
 
 a {
   color: black;
+}
+
+.footer-page{
+  background: linear-gradient(to top, #2d2c2c, #1f1f1f);
+  padding: 30px;
+}
+.footer-page__text{
+  font-family: fantasy;
+  color:aliceblue;
+  text-align:center;
+  font-weight: 400;
+  font-size: 18px;
 }

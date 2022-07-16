@@ -14,10 +14,10 @@ function createData(type, time, price) {
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    fontSize: 22,
+    fontSize: 24,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 18,
+    fontSize: 20,
   },
 }));
 

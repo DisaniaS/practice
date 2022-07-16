@@ -5,6 +5,8 @@ import { Typography } from '@mui/material'
 
 const PriceList = () => {
   return (
+    <div>
+    <div className='Price-List'>
     <div className='Price-Content'>
       <Typography>
         <div className='Oglavlenie'>
@@ -31,8 +33,8 @@ const PriceList = () => {
         <PriceTable/>
       </div>
     </div>
-    
-
+    </div>
+    </div>
   )
 }
 
