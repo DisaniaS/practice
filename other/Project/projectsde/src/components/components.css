@@ -28,8 +28,10 @@
 
 .contacts-content {
   background-image: url('./background3.jpg');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat ;
   height: 100vh;
+  background-size: cover;
+  position: relative;
 }
 
 .contacts-title{
@@ -98,6 +100,10 @@ li{
   justify-content: space-between;
   margin-left: 150px;
   margin-right: 150px;
+}
+
+.Egg{
+  width: 400px;
 }
 
 .Price-List{

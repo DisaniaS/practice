@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText } from '@mui/material';
 import React from 'react';
 import './components.css';
 import logo from './logo.png';
@@ -18,10 +19,22 @@ import twelvephoto from './photo/12.jpg';
 import serega from './photo/serega.png';
 import dima from './photo/dima.png';
 import egor from './photo/egor.png';
+import EasterEgg from './EasterEgg.jpg'
 
 
 
 const Home = () => {
+
+  const [open, setOpen] = React.useState(false)
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+    
+    const handleClose = () => {
+      setOpen(false);
+    };
+
   return (
     <div>
       <div className="Home-Menu">
@@ -29,10 +42,20 @@ const Home = () => {
         <div className="Home-Menu-Item"><a href="#gallery">Галерея</a></div>
         <div className="Home-Menu-Item"><a href="#team">Наша команда</a></div>
         <div className="App-logo">
-          <img src={logo} className="logo" alt="logo" srcset=""/> {/*сделать сылку */}
+        <a onClick={handleClickOpen}><img src={logo} className="logo" alt="logo" srcset=""/></a> 
           
         </div>
       </div>
+      <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+        <DialogTitle id="form-dialog-title">Вы обнаружили пасхалку нашего сайта</DialogTitle>
+        <DialogContent>
+        <DialogContentText>Тут мы отдыхаем в баньке после качалочки</DialogContentText>
+          <img src={EasterEgg} className="Egg" alt="Egg" srcset=""/>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color='primary'>Круто!!!</Button>
+        </DialogActions>
+      </Dialog>
       <div className='Welcome'> 
         <div className='Welcome-title'>
           Приобрести абонемент и стать сильнее
@@ -76,11 +99,11 @@ const Home = () => {
           Наша команда
         </div>
         <div className="team-raskaz">
-          <b>"Hanma Gym"</b> - это огромное объединение любителей аниме и спорта. Вдохновившись культовым аниме-сериалом "Боец Баки", наша команда создала собственный тематический спортивный зал, в котором каждый посетитель сможет найти что-то свое, знакомое, связанное с этим невероятным сериалом. 
+          <b>"Hanma Gym"</b> - это огромное объединение любителей аниме и спорта. Вдохновившись культовым аниме-сериалом "Боец Баки", наша команда создала сеть собственных тематических спортивных залов, в которых каждый посетитель сможет найти что-то свое, знакомое, связанное с этим невероятным сериалом. 
           На нашем логотипе красуется отец главного героя сериала, сильнейший человек планеты - Ханма Юдзеро. 
           Посметрев этот великолепный тайтл, наша команда настолько замотивировалась заниматься спортом, что решила хоть на шаг приблизиться к силе и воле этого персонажа. 
           А также мы загорелись идеей открыть свой спортивный зал и мотивировать остальных людей к такому же стремлению, как и наше собственное.
-          Наша команда состоит из настоящих профессионалов своего дела, каждый из которых добился невероятных успехов в мире спорта!       
+                 
         </div>
         <div className="team-we">
           Наша команда состоит из настоящих профессионалов своего дела, каждый из которых добился невероятных успехов в мире спорта!
